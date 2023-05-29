@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121214;
+}
+
+.container{
+    width: 65%;
+    margin: auto;
+}
+
+/*###################################
+####### CABEÇALHO DO SITE ###########
+###################################*/
+
+header{
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title{
+    font-size: 26px;
+}
+
+.title h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*#########################################
+####### SEÇÃO PRINCIPAL DO SITE ###########
+#########################################*/
+
+.MainContent{
+    padding: 20px;
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer{
+    max-width: 250px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+.formContainer h2{
+    font-size: 16px;
+}
+
+.marginbottom{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;
+    font: bold;
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+}
+
+
+/*#########################################
+####### SEÇÃO SECUNDARIA DO SITE ###########
+#########################################*/
+
+.SecondaryContent{
+    padding: 20px;
+    overflow: hidden;
+
+    background-color: rgb(202, 202, 202);
+}
+
+.picture{
+    float: left;
+    padding: 20px;
+    width: 50%;
+
+    text-align: right;
+}
+.picture img{
+    width:160px;
+}
+
+.discription{
+    float: right;
+    padding: 20px;
+    width: 50%;
+
+    text-align: left;
+}
+
+.discription h3{
+    margin-top: 45px;
+    color: white;
+    font-size: 25px
+}
+
+.discription p{
+    color: white;
+    margin-top: 20px;
+    padding-right: 155px;
+
+}
+
+/*#########################################
+####### SEÇÃO RODAPE DO SITE ###########
+#########################################*/
+
+.FooterContent{
+    padding: 35px;
+    text-align: center;
+    color: white;
+
+    background-color: #48C5CE;
+}
+
+
+@media screen and (max-width:1280px){
+    .picture{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .discription{
+        width: 100%;
+    }
+
+    .discription h3{
+        margin-top: 5px;
+
+        text-align: center;
+    }
+
+    .discription p{
+        margin-top: 20px;
+        padding-right: 0;
+    
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        width: 75%;
+    }
+
+    .formContainer{
+    max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+
+    .container{
+        width: 100%;
+    }
+
+}
+
+
+
